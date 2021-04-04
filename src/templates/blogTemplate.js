@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Layout from "../components/layout"
 
 
 export default function Template({
@@ -8,14 +9,21 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div>
+    <div css={`
+    code {
+      background-color: 'red';
+    } 
+    `
+    }>
       <div className="blog-post">
+        <Layout>
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
+        </Layout>
       </div>
     </div>
   )

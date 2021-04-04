@@ -1,11 +1,10 @@
 import * as React from "react"
-import Layout from "../components/layout"
 
 // styles
 const pageStyles = {
   color: "#232129",
   padding: 96,
-//   fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  fontFamily: "-apple-system, Roboto, sans-serif, serif",
   
 }
 const headingStyles = {
@@ -14,9 +13,7 @@ const headingStyles = {
   // maxWidth: 520,
 }
 const headingAccentStyles = {
-  // color: "#000000",
-  // fontFamily: "Nunito, Avenir, Helvetica, sans-serif",
-  // fontFeatureSettings: "kern,liga, clig, calt"
+  color: "#000000",
 }
 const paragraphStyles = {
   marginBottom: 48,
@@ -94,15 +91,14 @@ const links = [
 ]
 
 // markup
-const IndexPage = () => {
+const Blog = () => {
   return (
-    <Layout>
     <main style={pageStyles}>
       <title>BrianSweeney.dev</title>
       <h1 style={headingStyles}>
         BrianSweeney.dev
         <br />
-        <span style={headingAccentStyles}> - Meow meow meow meow meow. Tech stuff! </span>
+        <span style={headingAccentStyles}> - Welcome to my collection of tech things! </span>
         {/* <span role="img" aria-label="Party popper emojis">
           🎉🎉🎉
         </span> */}
@@ -143,8 +139,7 @@ const IndexPage = () => {
         ))}
       </ul>
     </main>
-    </Layout>
   )
 }
 
-export default IndexPage
+export default Blog
