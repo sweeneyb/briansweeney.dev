@@ -1,6 +1,24 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import styled from "styled-components"
+import { createGlobalStyle } from "styled-components"
+const GlobalStyle = createGlobalStyle`
+  code {
+    background-color: #f1f1f1;
+  }
+`
+
+
+
+const Container = styled.div`
+  margin: 3rem auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`
 
 
 export default function Template({
@@ -9,12 +27,9 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div css={`
-    code {
-      background-color: 'red';
-    } 
-    `
-    }>
+    
+    <Container>
+      <GlobalStyle/>
       <div className="blog-post">
         <Layout>
         <h1>{frontmatter.title}</h1>
@@ -25,7 +40,8 @@ export default function Template({
         />
         </Layout>
       </div>
-    </div>
+    </Container>
+    // </GlobalStyle> 
   )
 }
 
