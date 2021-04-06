@@ -1,5 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
+import Navbar from "../components/navbar"
 
 // styles
 const pageStyles = {
@@ -10,7 +11,7 @@ const pageStyles = {
 }
 const headingStyles = {
   marginTop: 0,
-  marginBottom: 64,
+  // marginBottom: 64,
   // maxWidth: 520,
 }
 const headingAccentStyles = {
@@ -97,16 +98,18 @@ const links = [
 const IndexPage = () => {
   return (
     <Layout>
+    <Navbar/>
     <main style={pageStyles}>
       <title>BrianSweeney.dev</title>
       <h1 style={headingStyles}>
         BrianSweeney.dev
-        <br />
-        <span style={headingAccentStyles}> - Meow meow meow meow meow. Tech stuff! </span>
+        </h1>
+        {/* <br /> */}
+        <span style={headingAccentStyles}>Building software. using software. amusing cats </span>
         {/* <span role="img" aria-label="Party popper emojis">
           🎉🎉🎉
         </span> */}
-      </h1>
+      
       {/* <p style={paragraphStyles}>
         Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
         update in real-time.{" "}

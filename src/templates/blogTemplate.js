@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Navbar from "../components/navbar"
 import styled from "styled-components"
 import { createGlobalStyle } from "styled-components"
 const GlobalStyle = createGlobalStyle`
@@ -27,21 +28,23 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    
+    <Layout>
+    <Navbar/>
     <Container>
       <GlobalStyle/>
       <div className="blog-post">
-        <Layout>
+
+          
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
-        </Layout>
       </div>
     </Container>
-    // </GlobalStyle> 
+    </Layout>
+    
   )
 }
 
