@@ -105,7 +105,7 @@ const IndexPage = () => {
         BrianSweeney.dev
         </h1>
         {/* <br /> */}
-        <span style={headingAccentStyles}>Building software. using software. amusing cats </span>
+        <span style={headingAccentStyles}>Building software. using software. amusing cats.</span>
         {/* <span role="img" aria-label="Party popper emojis">
           🎉🎉🎉
         </span> */}
