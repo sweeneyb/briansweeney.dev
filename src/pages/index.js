@@ -91,6 +91,12 @@ const links = [
     description: "An introduction to who I am and what I'm interested in.",
     color: "#0000FF"
   },
+  {
+    text: "A Few Container Basics",
+    url: "/blog/container-basics",
+    description: "You may have heard of a container, but what are they really, and why do we need another abstraction?",
+    color: "#0000FF"
+  },
   
 ]
 
