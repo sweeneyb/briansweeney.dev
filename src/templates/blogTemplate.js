@@ -14,8 +14,9 @@ const GlobalStyle = createGlobalStyle`
 
 const Container = styled.div`
   margin: 3rem auto;
-  max-width: 600px;
-  display: flex;
+  // max-width: 900px;
+  max-width: 60%;
+  // display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
