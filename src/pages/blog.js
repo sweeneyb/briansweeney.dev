@@ -84,6 +84,19 @@ const badgeStyle = {
 // data
 const links = [
   {
+    text: "I'm never buying a home server again",
+    url: "/blog/no-new-home-servers",
+    description: "I'm done keeping my home server up to date. An argument of time and economics.",
+    color: "#0000FF",
+    badge: "new"
+  },
+  {
+    text: "A Few Container Basics",
+    url: "/blog/container-basics",
+    description: "You may have heard of a container, but what are they really, and why do we need another abstraction?",
+    color: "#0000FF",
+  },
+  {
     text: "A new blog area",
     url: "/blog/my-first-post",
     description: "An introduction to who I am and what I'm interested in.",
