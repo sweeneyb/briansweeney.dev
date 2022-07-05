@@ -23,8 +23,10 @@
     "gatsby": "^3.1.2",
     "gatsby-plugin-mdx": "^2.2.0",
     "gatsby-plugin-styled-components": "^4.2.0",
+    "gatsby-remark-graph": "^0.2.6",
     "gatsby-source-filesystem": "^3.2.0",
     "gatsby-transformer-remark": "^3.2.0",
+    "puppeteer": "^15.3.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "styled-components": "^5.2.3"
