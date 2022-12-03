@@ -40,6 +40,12 @@ module.exports = {
               language: 'mermaid', // default
               theme: 'default' // could also be dark, forest, or neutral
             }
+          },
+          {
+          resolve: `gatsby-remark-prismjs`,
+          options: {
+            showLineNumbers: true
+          }
           }
         ]
       }

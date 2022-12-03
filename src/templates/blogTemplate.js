@@ -5,9 +5,7 @@ import Navbar from "../components/navbar"
 import styled from "styled-components"
 import { createGlobalStyle } from "styled-components"
 const GlobalStyle = createGlobalStyle`
-  code {
-    background-color: #f1f1f1;
-  }
+
 `
 
 
