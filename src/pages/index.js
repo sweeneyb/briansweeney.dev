@@ -86,11 +86,17 @@ const badgeStyle = {
 // data
 const links = [
   {
+    text: "The Repair of a smart light",
+    url: "/blog/Smartlight-Repair",
+    description: "Will I be able to bring a dead smart light back to life?",
+    color: "#0000FF",
+    badge: "new"
+  },
+  {
     text: "Networks, subnets, and VPCs! Oh my!",
     url: "/blog/Cloud-Networking",
     description: "What are VPCs in the cloud? And why do we need them?",
-    color: "#0000FF",
-    badge: "new"
+    color: "#0000FF"
   },
   {
     text: "I'm never buying a home server again",
