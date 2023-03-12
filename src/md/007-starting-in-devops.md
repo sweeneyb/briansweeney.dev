@@ -1,3 +1,10 @@
+---
+slug: "/blog/Starting-in-devops"
+date: "2020-09-18"
+title: "Starting in Devops"
+---
+
+
 Ask 3 people how they define DevOps and you'll get at least 4 answers.  The common thread, though, will be lots of learning, an incredible pace, and the bringing together of multiple technologies.  While you'll certainly never be bored, you may miss the opportunity to be deeply comfortable in a technology before moving on.  Before we dive into the tools you need and things you'll do, let's get on the same page about what DevOps is.
 
 ## The "DevOps as a Mindset" view

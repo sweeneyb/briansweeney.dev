@@ -86,11 +86,17 @@ const badgeStyle = {
 // data
 const links = [
   {
+    text: "Networks, subnets, and VPCs! Oh my!",
+    url: "/blog/Cloud-Networking",
+    description: "What are VPCs in the cloud? And why do we need them?",
+    color: "#0000FF",
+    badge: "new"
+  },
+  {
     text: "I'm never buying a home server again",
     url: "/blog/no-new-home-servers",
     description: "I'm done keeping my home server up to date. An argument of time and economics.",
     color: "#0000FF",
-    badge: "new"
   },
   {
     text: "A Few Container Basics",
