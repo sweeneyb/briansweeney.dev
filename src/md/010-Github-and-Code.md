@@ -24,7 +24,7 @@ If you are going to use code, make sure it's licensed.  You'll likely never own 
 
 ## Exercises:
 Want to make sure you understand what github is all about?  
-1) Fork https://github.com/sweeneyb/devEnvs.
-2) Clone it (or your fork)
-3) add a file and push it to your fork.
-4) Have a friend fork https://github.com/sweeneyb/devEnvs, and open a merge request to have your newly added file appear in their repo without affecting the original repo.
+1. Fork https://github.com/sweeneyb/devEnvs.
+1. Clone it (or your fork)
+1. add a file and push it to your fork.
+1. Have a friend fork https://github.com/sweeneyb/devEnvs, and open a merge request to have your newly added file appear in their repo without affecting the original repo.
