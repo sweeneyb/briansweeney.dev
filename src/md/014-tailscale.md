@@ -47,7 +47,7 @@ Ethernet adapter Ethernet 3:
    Subnet Mask . . . . . . . . . . . : 255.255.255.0
    Default Gateway . . . . . . . . . : 192.168.1.1
 ```
-You can use the table at [https://techlibrary.hpe.com/docs/otlink-wo/CIDR-Conversion-Table.html](https://techlibrary.hpe.com/docs/otlink-wo/CIDR-Conversion-Table.html) to convert the Subnet Mask to what's called "CIDR notation".  In my case, the mask is `255.255.255.0` which corresponds to a `/24`[^2].  
+You can use the table at [https://techlibrary.hpe.com/docs/otlink-wo/CIDR-Conversion-Table.html](https://techlibrary.hpe.com/docs/otlink-wo/CIDR-Conversion-Table.html) to convert the Subnet Mask to what's called "CIDR notation".  In my case, the mask is `255.255.255.0` which corresponds to a `/24`.  
 
 Linux will be a bit more explicit with `ip a`:
 ```

@@ -86,9 +86,9 @@ const badgeStyle = {
 // data
 const links = [
   {
-    text: "The Repair of a smart light",
-    url: "/blog/Smartlight-Repair",
-    description: "Will I be able to bring a dead smart light back to life?",
+    text: "Wired Ethernet over 50 year old phone lines",
+    url: "blog/ethernet-over-phone/",
+    description: "Can we coerse untwisted, 6 conductor phone line to provide reliable ethernet?",
     color: "#0000FF",
     badge: "new"
   },
