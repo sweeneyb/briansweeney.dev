@@ -1,5 +1,5 @@
 import * as React from "react"
-import "@fontsource/varela-round"
+import "@fontsource/open-sans"
 
 // const IndexPage = () => {
 //     return (
@@ -7,7 +7,7 @@ import "@fontsource/varela-round"
 //       <main style={pageStyles}>
 
 const fontStyle = {
-    fontFamily: "Varela Round"
+    fontFamily: "Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans-serif"
   }
 
 

@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/open-sans": "^5.1.0",
     "@fontsource/varela-round": "^4.5.9",
     "gatsby": "^5.7.0",
     "gatsby-plugin-mdx": "^5.7.0",

@@ -1,9 +1,9 @@
 import * as React from "react"
-import "@fontsource/varela-round"
+import "@fontsource/open-sans"
 import styled from "styled-components"
 
 const fontStyle = {
-    fontFamily: "Varela Round"
+    fontFamily: "Open Sans, Segoe UI, Apple SD Gothic Neo, Lucida Grande, Lucida Sans Unicode, sans-serif"
   }
 
 const Li = styled.li`
