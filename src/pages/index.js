@@ -86,10 +86,20 @@ const badgeStyle = {
 // data
 const links = [
   {
-    text: "Tailscale home services",
-    url: "blog/tailscale-home-services/",
-    description: "Access your home from anywhere with Tailscale",
+    text: "Deploying Gitlab",
+    url: "/blog/deploy-gitlab",
+    description: "Deploy Gitlab for some personal, non-HA use",
     badge: "new"
+  },
+  {
+    text: "Secure cloud LAN",
+    url: "/blog/tailscale-and-cloud-dev",
+    description: "Bringing the cloud home with tailscale"
+  },
+  {
+    text: "Tailscale home services",
+    url: "blog/tailscale-home-services",
+    description: "Access your home from anywhere with Tailscale",
   },
   {
     text: "Wired Ethernet over 50 year old phone lines",
