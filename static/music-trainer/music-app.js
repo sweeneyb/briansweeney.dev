@@ -1,5 +1,6 @@
 const VF = Vex.Flow;
 const notesList = [
+    "C2", "D3", "E3", "F3", "G3", "A3", "B3",
     "C3", "D3", "E3", "F3", "G3", "A3", "B3",
     "C4", "D4", "E4", "F4", "G4", "A4", "B4",
     "C5", "D5", "E5", "F5", "G5", "A5", "B5"
@@ -70,7 +71,7 @@ function frequencyToNote(freq) {
     n = Math.round(12 * Math.log2(freq / A4));
     const index = ( (n%12) + 9 + 12) % 12;
     const octave = 4 + Math.floor((n + 9) / 12);
-    console.log("offset, index, octave", n, index, octave)
+    // console.log("offset, index, octave", n, index, octave)
     return notes[index] + octave;
 }
 
@@ -126,16 +127,16 @@ async function startListening() {
         const bufferSize = 1024;
 
         processor.addEventListener("audioprocess", function (event) {
-            console.log("event listener")
+            // console.log("event listener")
         })
         processor.onaudioprocess = function (e) {
-            console.log("processing pitch")
+            // console.log("processing pitch")
             const input = e.inputBuffer.getChannelData(0); // mono channel
 
             // aubio.js expects Float32Array
             const pitch = pitchDetector.do(input);
             if (pitch) {
-                console.log("Detected pitch:", pitch);
+                // console.log("Detected pitch:", pitch);
                 freq = pitch
             }
         }
@@ -187,23 +188,26 @@ async function startListening() {
     const detect = () => {
         draw()
         analyser.getFloatTimeDomainData(buffer);
-        console.log("freq: ", freq)
+        // console.log("freq: ", freq)
         if (freq !== -1) {
             const detectedNote = frequencyToNote(freq);
-            console.log("frequency is: ", freq, detectedNote)
+            // console.log("frequency is: ", freq, detectedNote)
             document.getElementById("result").textContent = `You played: ${detectedNote} (${Math.floor(freq)}) looking for ${targetNote} ${noteToFrequency(targetNote)}`;
             if (detectedNote === targetNote || detectionOverride) {
+                console.log("match!!!")
                 document.getElementById("greenCheck").textContent += " ✅ Correct!";
-                setTimeout(requestAnimationFrame(function() {
-                    nextNote();
+                setTimeout(function() {
                     document.getElementById("greenCheck").textContent = "";
-                }), 2000);
+                    nextNote();
+                    requestAnimationFrame(detect)
+                }, 1000)
+            } else {
+                setTimeout(requestAnimationFrame(detect), 2000);
             }
-            setTimeout(requestAnimationFrame(detect), 2000);
         } else {
             console.log("frequency is -1")
             if (continueListening == true) {
-                requestAnimationFrame(detect);
+                setTimeout(requestAnimationFrame(detect), 2000);
             }
         }
 
