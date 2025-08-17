@@ -186,13 +186,13 @@ async function startListening() {
     }
 
     const detect = () => {
-        draw()
+        // draw()
         analyser.getFloatTimeDomainData(buffer);
         // console.log("freq: ", freq)
         if (freq !== -1) {
             const detectedNote = frequencyToNote(freq);
             // console.log("frequency is: ", freq, detectedNote)
-            document.getElementById("result").textContent = `You played: ${detectedNote} (${Math.floor(freq)}) looking for ${targetNote} ${noteToFrequency(targetNote)}`;
+            document.getElementById("result").textContent = `Listening... You played: ${detectedNote}, looking for ${targetNote}`;
             if (detectedNote === targetNote || detectionOverride) {
                 console.log("match!!!")
                 document.getElementById("greenCheck").textContent += " ✅ Correct!";
